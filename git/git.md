@@ -156,4 +156,122 @@ $ git config --global user.email "Votre email"
 
 ---
 
+## Comment récupérer un repo git distant ?
+
+Avec la commande :
+
+```sh
+$ git clone <url>  # Clone un repo dans un dossier portant son nom
+```
+
+Ici \<url\> est soit :
+
+  - Un lien https ([https://github.com/Corpauration/cyrel](https://github.com/Corpauration/cyrel)) -> N’utilise pas notre clé ssh pour s’authentifier
+  - Une adresse qui commence par `git@` 
+
+---
+
+## Comment voir les logs du repo ?
+
+Avec la commande :
+
+```sh
+$ git log
+```
+
+![center](img/git0.png)
+
+--- 
+
+## Comment voir les modifications faites par un commit ?
+
+Avec la commande :
+
+```sh
+$ git show <commit>
+```
+
+---
+
+## Comment voir les modifications faites par un commit ?
+
+![center height:500px](img/git1.png)
+
+
+--- 
+
+## Comment voir les modifications faites depuis un commit ?
+
+Avec la commande :
+
+```sh
+$ git diff <commit>
+```
+
+---
+
+## Comment voir les modifications faites depuis un commit ?
+
+![center height:500px](img/git2.png)
+
+---
+
+## Comment créer un repo git ?
+
+Créez un dossier vide et à l’intérieur initialisez un nouveau repo git avec la commande :
+
+```sh
+$ git init
+```
+
+Le dossier contient le dossier .git
+
+---
+
+## Comment le lier à un repo en ligne ?
+
+- Créer le repo en ligne :
+
+Exemple avec le gitlab de l’école :
+
+![center height:300px](img/gitlab2.png)
+
+---
+
+## Comment le lier à un repo en ligne ?
+
+- Lier notre repo à celui créé en ligne
+
+```sh
+$ git remote add origin git@gitlab.etude.cy-tech.fr:schwerkolt/git-test.git
+```
+
+---
+
+## Regardons le status de notre repository
+
+Dans votre dossier créez un fichier toto
+
+```sh
+$ git status
+```
+
+![center height:300px](img/git3.png)
+
+---
+
+## Comment sauvegarder les modifications faites ?
+
+- Mettre un fichier dans la liste des modifications qu’on veut sauvegarder
+
+```sh
+$ git add <fichier>   # git rm --cached <fichier>    pour le retirer de la liste
+```
+
+- Sauvegardons les modifications
+
+```sh
+$ git commit   # Ouvre vim/nano pour écrire le message de commit
+$ git commit -m “Message de commit”
+```
 
