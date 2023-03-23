@@ -672,7 +672,6 @@ Token *lexer_get_token(Lexer *l) {
 
 ---
 
-
 ## La calculette (Analyse Lexicale)
 
 ```c
@@ -706,3 +705,7 @@ Token *lexer_get_token(Lexer *l) {
       exit(EXIT_FAILURE);
     }
 ```
+
+---
+
+# Merci pour votre écoute !
